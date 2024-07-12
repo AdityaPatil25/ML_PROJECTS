@@ -6,10 +6,6 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
 
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-
 
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
